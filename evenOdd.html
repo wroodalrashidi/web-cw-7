@@ -7,18 +7,15 @@
     <title>فردي أم زوجي؟ 🥴</title>
   </head>
   <body>
-    <!-- السؤال الأول -->
     <h2 id="numberType"></h2>
     <script>
-      // 👇🏻 number قم بتعيين قيمة عدد عشوائي إلى المتغير
-
-      // 👇🏻 if else باستخدام number قم باختبار قيمة العدد
-      // () استخدم الشرط المناسب بين القوسين
-      if (condition) {
+      let number = 5;
+      if (number % 2 == 0) {
         document.getElementById("numberType").innerHTML =
           number + " هو عدد زوجي";
-      } else if (condition) {
-        // هل تستطيع إكمال الكود المطلوب هنا؟
+      } else {
+        document.getElementById("numberType").innerHTML =
+          number + " هو عدد فردي";
       }
     </script>
   </body>
