@@ -64,10 +64,20 @@
               يا للهول! 😲          أكبر من أو يساوي 30
               لا أدري! 🤷🏻‍♀️                   أي شي ثاني
         */
-        if (condition) {
+        if (weight/(height*height) < 20) {
           document.getElementById("status").innerHTML = "أنت نحيف للغاية";
         }
-        // أكمل
+        else if (weight/(height*height) >= 20 && height*weight <= 29 ) {
+          document.getElementById("status").innerHTML = "وزنك جيد";
+        }
+        else if (weight/(height*height) >= 30 ) {
+          document.getElementById("status").innerHTML = "يا للهول! 😲 ";
+        }
+        else{
+          document.getElementById("status").innerHTML = "لا أدري! 🤷🏻‍♀️ ";
+        }
+    
+
       }
     </script>
   </body>

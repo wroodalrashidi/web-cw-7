@@ -44,9 +44,20 @@
               B        80 - 95
               A        90 - 100
         */
-        if (condition) {
+        if (total <= 69) {
           document.getElementById("status").innerHTML = "D";
         }
+        else if (total >= 70 && total <= 79) {
+          document.getElementById("status").innerHTML = "C";
+        }
+        else if (total >= 80 && total <= 89) {
+          document.getElementById("status").innerHTML = "B";
+        }
+         else if (total >= 90) {
+          document.getElementById("status").innerHTML = "A";
+        }
+    
+       
         // أكمل
       }
     </script>

@@ -11,15 +11,22 @@
     <h2 id="numberType"></h2>
     <script>
       // 👇🏻 number قم بتعيين قيمة عشوائية إلى المتغير
+      
+      let number = 33
 
       // 👇🏻 if else باستخدام number قم باختبار قيمة العدد
+      
+      
       // () استخدم الشرط المناسب بين القوسين
-      if (condition) {
+      if (number% 2 == 0) {
         document.getElementById("numberType").innerHTML =
-          number + " هو عدد زوجي";
-      } else if (condition) {
-        // هل تستطيع إكمال الكود المطلوب هنا؟
+          number + "  عدد زوجي";
+      } else {
+        document.getElementById("numberType").innerHTML =
+          number + "  عدد فردي";
       }
     </script>
+
+   
   </body>
 </html>
